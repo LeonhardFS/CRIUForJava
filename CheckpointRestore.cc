@@ -1,4 +1,4 @@
-#include "CheckpointRestore.hpp"
+#include "CheckpointRestore.h"
 #include <criu.h>
 #include <dirent.h>
 #include <errno.h>

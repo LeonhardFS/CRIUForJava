@@ -108,9 +108,7 @@ public class CheckpointRestore {
     }
 
     public static void DebugPrint(String s) {
-	if (false) {
 	    System.out.println(s);
-	}
     }
 
     static  {

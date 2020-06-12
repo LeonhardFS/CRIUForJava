@@ -1,3 +1,10 @@
+set JAVA_HOME, e.g. under ubuntu `export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64`
+
+
+
+
+Old:
+
 This is demo code to show how to use CRIU (Checkpoint Restore In Userspace) from Java.
 
 It's very much a prototype.  There are many caveats in this file.  Please try it and let me know how it goes.

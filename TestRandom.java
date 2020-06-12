@@ -37,7 +37,7 @@ public class TestRandom {
         }
 	//	CheckpointRestore.CheckTheWorld();
 	long end = System.currentTimeMillis();
-	String dir = "/home/chf/SavedWorlds/run" + end;
+	String dir = "./SavedWorlds/run" + end;
 	
 	CheckpointRestore.RegisterCheckpointHook(new BeforeHook("Restore Command: As root java -XX:+UseSerialGC -XX:-UsePerfData -Djava.library.path=$LOAD_LIBRARY_PATH  TestRandomRestore " + dir ));
 	CheckpointRestore.RegisterRestoreHook(new AfterHook("That's all folks"));	
