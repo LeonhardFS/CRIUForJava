@@ -1,7 +1,6 @@
 include(LibFindMacros)
 
 libfind_pkg_check_modules(CRIU_PKGCONF criu)
-message(STATUS "pkg conf paths ${CRIU_PKGCONF_INCLUDE_DIRS}")
 
 find_path(CRIU_INCLUDE_DIR NAMES criu.h PATHS ${CRIU_PKGCONF_INCLUDE_DIRS})
 
