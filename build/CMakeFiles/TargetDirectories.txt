@@ -1,3 +1,0 @@
-/home/lespiege/projects/CRIUForJava/build/CMakeFiles/rebuild_cache.dir
-/home/lespiege/projects/CRIUForJava/build/CMakeFiles/CheckpointRestore.dir
-/home/lespiege/projects/CRIUForJava/build/CMakeFiles/edit_cache.dir

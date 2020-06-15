@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libCheckpointRestore.so -o libCheckpointRestore.so CMakeFiles/CheckpointRestore.dir/CheckpointRestore.cc.o -Wl,-rpath,/usr/local/lib/x86_64-linux-gnu /usr/local/lib/x86_64-linux-gnu/libcriu.so 
