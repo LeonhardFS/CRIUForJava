@@ -41,8 +41,14 @@ public class TestRandom {
 	
 	CheckpointRestore.RegisterCheckpointHook(new BeforeHook("Restore Command: As root java -XX:+UseSerialGC -XX:-UsePerfData -Djava.library.path=$LOAD_LIBRARY_PATH  TestRandomRestore " + dir ));
 	CheckpointRestore.RegisterRestoreHook(new AfterHook("That's all folks"));	
-	CheckpointRestore.SaveTheWorld(dir);
 	
+	try {
+	CheckpointRestore.SaveTheWorld(dir);
+	} catch(UnsatisfiedLinkError ule) {
+	
+	System.out.println(ule.getMessage());
+	ule.printStackTrace();
+	}
         long max = 0; long min = upperBound; long average = 0;
         for (int i = 0; i < upperBound; i++) {
             long s = testarray[i];
